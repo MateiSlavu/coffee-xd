@@ -9,7 +9,7 @@ namespace WiredBrainCoffee.ViewModel {
             _customerDataProvider = customerDataProvider;
         }
         public ObservableCollection<Customer> Customers { get; } = new();
-        public ICustomerDataProvider _customerDataProvider { get; }
+        private ICustomerDataProvider _customerDataProvider { get; }
 
         public async Task LoadAsync() {
             if (Customers.Any()) {
@@ -23,6 +23,6 @@ namespace WiredBrainCoffee.ViewModel {
                 }
             }
         }
-
+        //seeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeex
     }
 }
